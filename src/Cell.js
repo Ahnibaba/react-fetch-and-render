@@ -1,13 +1,10 @@
 import React from 'react'
-//import SingleData from './SingleData'
 
-const Cell = ({ cellData, key}) => {
+
+const Cell = ({ value }) => {
   return (
    
-
-    <td>
-        {cellData}
-    </td>
+    <td>{`${value.myKey}:` + JSON.stringify(value.myValue)}</td> // I am concatenating here
   )
 }
 
